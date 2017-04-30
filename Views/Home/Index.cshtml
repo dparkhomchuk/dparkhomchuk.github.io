@@ -1,0 +1,283 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+
+<div class="col-lg-3 col-md-4 left" style="background-color:coral; float:left; padding:0px;">
+    <div style="width:auto; height:300px; background-color:chocolate">
+        <div style="float:left">
+            <div style="padding-top:100px; padding-bottom:15px; padding-left:15px; height:35px; padding-right:15px; font-family:'Segoe UI'; font-size:14pt; color:#ffffff;">My points</div>
+            <div style="padding-top:35px; padding-bottom:15px; padding-left:15px; height:35px; font-family:'Segoe UI'; font-size:14pt; color:#ffffff;">Partners</div>
+            <div style="padding-top:35px; padding-bottom:15px; padding-left:15px; font-family:'Segoe UI'; font-size:14pt; height:35px; color:#ffffff;">Settings</div>
+            <div style="padding-top:35px; padding-bottom:15px; padding-left:15px; font-family:'Segoe UI'; font-size:14pt; height:35px; color:#ffffff;">Log out</div>
+        </div>
+        <div style="padding-top:100px; padding-bottom:15px; padding-left:15px; padding-right:25px; height:35px; font-family:'Segoe UI'; font-size:14pt; color:#ffffff;">54</div>
+    </div>
+    <form style="padding-left:15px; padding-right:15px;">
+
+        <input id="name" type="text" style="margin-top:25px; margin-right:10px;" class="form-control" placeholder="Insert name">
+        <div class="btn-group" role="group" style="margin-top:25px;">
+            <button id="btnGroupVerticalDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span id="categoryname">Bus station</span>  <span class="caret"></span> </button>
+            <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
+                <li><a href="#" class="category-link" data-category="Bus station">Bus station</a></li>
+                <li><a href="#" class="category-link" data-category="Pharmacy">Drugstore</a></li>
+                <li><a href="#" class="category-link" data-category="Shop">Shop</a></li>
+                <li><a href="#" class="category-link" data-category="Crosswalk">Crosswalk</a></li>
+                <li><a href="#" class="category-link" data-category="Museum">Museum</a></li>
+                <li><a href="#" class="category-link" data-category="Metro">Metro</a></li>
+                <li><a href="#" class="category-link" data-category="Bank">Bank</a></li>
+                <li><a href="#" class="category-link" data-category="Cafe">Cafe</a></li>
+                <li><a href="#" class="category-link" data-category="Goverment">Goverment</a></li>
+                <li><a href="#" class="category-link" data-category="Hotel">Hotel</a></li>
+                <li><a href="#" class="category-link" data-category="Factory">Factory</a></li>
+                <li><a href="#" class="category-link" data-category="Church">Church</a></li>
+                <li><a href="#" class="category-link" data-category="Hospital">Hospital</a></li>
+                <li><a href="#" class="category-link" data-category="School">School</a></li>
+                <li><a href="#" class="category-link" data-category="Stadium">Stadium</a></li>
+                <li><a href="#" class="category-link" data-category="Railway station">Railway station</a></li>
+                <li><a href="#" class="category-link" data-category="Airport">Airport</a></li>
+                <li><a href="#" class="category-link" data-category="University">University</a></li>
+                <li><a href="#" class="category-link" data-category="Post office">Post office</a></li>
+            </ul>
+        </div>
+        <div class="" style="margin-top:25px;">
+            <ul class="nav nav-tabs" sstyle="margin-top:25px;">
+                <li class="active"><a data-toggle="tab" href="#wheelchair">Wheelchair</a></li>
+                <li><a data-toggle="tab" href="#blind">Blind</a></li>
+                <li><a data-toggle="tab" href="#deaf">Deaf</a></li>
+            </ul>
+        </div>
+
+
+        <div class="tab-content">
+            <div id="wheelchair" class="tab-pane fade in active">
+                <div class="col-sm-6" style="margin-top:20px"><strong>TOILET</strong></div><br />
+                <div class="col-sm-9">
+                    <fieldset>
+                        <div>
+                            <label>
+                                <input type="radio" id="q128" name="action" value="1" class="toilet" data-value="0" />&nbsp;&nbsp;<span style="width:50px">Yes&nbsp;&nbsp;</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="q129" name="action" value="2" class="toilet" data-value="1" />&nbsp;&nbsp;<span style="width:50px">Tenative&nbsp;&nbsp;</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="q130" name="action" value="3" class="toilet" data-value="2" checked="checked" />&nbsp;&nbsp;<span style="width:50px">No&nbsp;&nbsp;</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div id="blind" class="tab-pane fade">
+                <div style="margin-top:20px; margin-left:15px;"><strong>TRAFFIC LIGHT WITH SOUND SIGNAL</strong></div>
+                <div class="col-sm-12">
+                    <fieldset>
+                        <div>
+                            <label>
+                                <input type="radio" id="q128" name="action" value="1" class="traffic" data-value="0" />&nbsp;&nbsp;<span style="width:50px">Yes&nbsp;&nbsp;</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="q129" name="action" value="2" class="traffic" data-value="1" />&nbsp;&nbsp;<span style="width:50px">Tenative&nbsp;&nbsp;</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="q130" name="action" value="3" class="traffic" data-value="2" checked="checked" />&nbsp;&nbsp;<span style="width:50px">No&nbsp;&nbsp;</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div style="margin-top:20px; margin-left:15px;"><strong>MENU AVAILABLE IN BRALLE</strong></div>
+                <div class="col-sm-12">
+                    <div>
+                        <label>
+                            <input type="radio" id="q128" name="action" value="1" class="menu" data-value="0" />&nbsp;&nbsp;<span style="width:50px">Yes&nbsp;&nbsp;</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="q129" name="action" value="2" class="menu" data-value="1" />&nbsp;&nbsp;<span style="width:50px">Tenative&nbsp;&nbsp;</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="q130" name="action" value="3" class="menu" data-value="2" checked="checked" />&nbsp;&nbsp;<span style="width:50px">No&nbsp;&nbsp;</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div id="deaf" class="tab-pane fade">
+                <div style="margin-top:20px; margin-left:15px;"><strong>ENOUGH VISUAL SENSE</strong></div>
+                <div class="col-sm-12">
+                    <div>
+                        <label>
+                            <input type="radio" id="q128" name="action" value="1" class="enough" data-value="0" />&nbsp;&nbsp;<span style="width:50px">Yes&nbsp;&nbsp;</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="q129" name="action" value="2" class="enough" data-value="1" />&nbsp;&nbsp;<span style="width:50px">Tenative&nbsp;&nbsp;</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="q130" name="action" value="3" class="enough" data-value="2" checked="checked" />&nbsp;&nbsp;<span style="width:50px">No&nbsp;&nbsp;</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="position: absolute; bottom:   30px;">
+            <button type="button" style="background-color:crimson; border-color:crimson" class="btn btn-primary">Cancel</button>
+            <button type="button" class="btn btn-primary" onclick="submitForm()">Save</button>
+        </div>
+    </form>
+</div>
+<div class="col-lg-9 col-md-8 right" id="canvas" style="height: 100%"></div>
+
+<!--Устанавливаем секцию scripts, которая затем будет рендериться на мастер-странице -->
+
+<script type="text/javascript">
+
+    $('.category-link').click(function (e) {
+        console.log(e);
+        $('#categoryname').html(e.currentTarget.innerHTML);
+    });
+
+
+    google.maps.visualRefresh = true;
+    // установка основных координат
+    var Kiev = new google.maps.LatLng(50.468973, 30.516178);
+
+    // Установка общих параметров отображения карты, как масштаб, центральная точка и тип карты
+    var mapOptions = {
+        zoom: 15,
+        center: Kiev,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+
+    // Встраиваем гугл-карты в элемент на странице и получаем объект карты
+    var map = new google.maps.Map(document.getElementById("canvas"), mapOptions);
+
+
+    var movableMarker = new google.maps.Marker({
+        //'position': new google.maps.LatLng(50.468973, 30.516178),
+        'map': map,
+        'title': 'ololo',
+        draggable: true
+    });
+
+    function resetMarker() {
+        movableMarker = new google.maps.Marker({
+            'position': new google.maps.LatLng(50.468973, 30.516178),
+            'map': map,
+            'title': 'ololo',
+            draggable: true
+        });
+    };
+
+    movableMarker.setIcon('http://maps.google.com/mapfiles/ms/icons/blue-dot.png');
+
+    $(document).ready(function () {
+        console.log("im here");
+        GetMap();
+    });
+
+    function submitForm() {
+        var long = movableMarker.position.lng();
+        var lat = movableMarker.position.lat();
+        
+        var name = $('#name')[0].value;
+        var category = $('#categoryname')[0].innerHTML;
+        
+        console.log(name);
+        console.log(category);
+
+
+
+        var dto = {
+            PlaceName: name,
+            PlaceCategory: category,
+            GeoLong: long,
+            GeoLat: lat
+        };
+        var toiletButtons = $('.toilet');
+        $.each(toiletButtons, function (i, item) {
+            if (item.checked) {
+                dto.ToiletAvail = item.value;
+            }
+        });
+        var TrafficLightAvail = $('.traffic');
+        $.each(TrafficLightAvail, function (i, item) {
+            if (item.checked) {
+                dto.TrafficLightAvail = item.value;
+            }
+        });
+
+        var MenuAvail = $('.menu');
+        $.each(MenuAvail, function (i, item) {
+            if (item.checked) {
+                dto.MenuAvail = item.value;
+            }
+        });
+
+        var VisualAvail = $('.enough');
+        $.each(VisualAvail, function (i, item) {
+            if (item.checked) {
+                dto.VisualAvail = item.value;
+            }
+        });
+
+
+        $.post('@Url.Action("PostPoint", "Home")',
+           dto).done(function (data) {
+               movableMarker.setMap(null);
+               $('#pointform').hide();
+               GetMap();
+           });
+
+        console.log("posted");
+
+    }
+
+    // Функция загрузки
+    function GetMap() {
+
+        console.log("reseting marker");
+        resetMarker();
+        console.log("reseted marker");
+        // Получаем данные
+        $.getJSON('@Url.Action("GetData","Home")', function (data) {
+            // Проходим по всем данным и устанавливаем для них маркеры
+            $.each(data, function (i, item) {
+                var marker = new google.maps.Marker({
+                    'position': new google.maps.LatLng(item.GeoLat, item.GeoLong),
+                    'map': map,
+                    'title': item.PlaceName
+                });
+
+                console.log(item);
+
+                var iconname = item.PlaceCategory;
+                iconname = iconname.replace(/\s+/g, '').toLowerCase();
+
+                iconname = "/icons/" + iconname + "-" + item.AvailabilityType + ".png";
+
+                console.log(item.PlaceCategory);
+                console.log(item.AvailabilityType);
+                console.log(iconname);
+
+
+                // Берем для этих маркеров синие иконки с сайта google
+                marker.setIcon(iconname);
+
+                // Для каждого объекта добавляем доп. информацию, выводимую в отдельном окне
+                var infowindow = new google.maps.InfoWindow({
+                    content: "<div class='stationInfo'><h2>Place name " + item.PlaceName + "</h2><div>"
+                        + "</div><div><h4>Place category: " + item.PlaceCategory + "</h4></div></div>"
+                });
+
+                // обработчик нажатия на маркер объекта
+                google.maps.event.addListener(marker, 'click', function () {
+                    infowindow.open(map, marker);
+                });
+
+
+            })
+        });
+
+
+    }
+</script>
